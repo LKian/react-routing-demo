@@ -10,8 +10,9 @@ function Shop() {
 
   const fetchItems = async () => {
     const data = await fetch("https://jsonplaceholder.typicode.com/posts");
+    console.log("THIS IS DAATTTTAAAAA", data);
     const items = await data.json();
-    console.log(items);
+    console.log("THIS IS ITEMS", items);
     setItems(items);
   };
 
