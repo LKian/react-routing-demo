@@ -1,38 +1,108 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+nav {
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
+  min-height: 10vh;
+  background-color: rgb(73, 79, 82);
+  color: #fff;
+}
+
+.page {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.nav-links {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.grid::after {
+  content: "";
+  width: 100%;
+  margin: 0.5rem;
+}
+
+@media (min-width: 551px) {
+  .grid::after {
+    margin: 0 0.5rem;
+  }
+}
+
+@media (min-width: 801px) {
+  .grid::after {
+    width: calc(33% - 0.5rem);
+    max-width: 400px;
+  }
+}
+
+.page-header {
+  padding: 50px 70px;
+}
+
+.card {
+  border: 1px solid #ccc;
+  box-shadow: 1px 1px 3px #ccc;
+  width: 25%;
+  min-height: 250px;
+  margin: 0;
+}
+
+@media (min-width: 551px) {
+  .card {
+    width: calc(33%-0.5rem);
+  }
+}
+
+@media (min-width: 801px) {
+  .card {
+    width: calc(33%-0.5rem);
+    max-width: 400px;
+  }
+}
+
+.card-title-container {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 50px;
+  padding: 10px;
+  overflow: hidden;
+  background-color: rgb(185, 161, 39);
 }
 
-.App-link {
-  color: #61dafb;
+.card-title {
+  color: #fff;
+  line-height: 35px;
+  text-transform: capitalize;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card-body {
+  padding: 15px;
+  text-align: left;
 }
