@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/react-routing-demo/static/css/main.24ceb35a.chunk.css",
+    "main.css": "/react-routing-demo/static/css/main.9fffb429.chunk.css",
     "main.js": "/react-routing-demo/static/js/main.a376cd7c.chunk.js",
     "main.js.map": "/react-routing-demo/static/js/main.a376cd7c.chunk.js.map",
     "runtime-main.js": "/react-routing-demo/static/js/runtime-main.81d5b3a4.js",
@@ -8,15 +8,15 @@
     "static/js/2.d10a9821.chunk.js": "/react-routing-demo/static/js/2.d10a9821.chunk.js",
     "static/js/2.d10a9821.chunk.js.map": "/react-routing-demo/static/js/2.d10a9821.chunk.js.map",
     "index.html": "/react-routing-demo/index.html",
-    "precache-manifest.24249f70709e1061e45d60ff71129cbf.js": "/react-routing-demo/precache-manifest.24249f70709e1061e45d60ff71129cbf.js",
+    "precache-manifest.d21a897ca8314824d816cd2bee91067c.js": "/react-routing-demo/precache-manifest.d21a897ca8314824d816cd2bee91067c.js",
     "service-worker.js": "/react-routing-demo/service-worker.js",
-    "static/css/main.24ceb35a.chunk.css.map": "/react-routing-demo/static/css/main.24ceb35a.chunk.css.map",
+    "static/css/main.9fffb429.chunk.css.map": "/react-routing-demo/static/css/main.9fffb429.chunk.css.map",
     "static/js/2.d10a9821.chunk.js.LICENSE.txt": "/react-routing-demo/static/js/2.d10a9821.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.81d5b3a4.js",
     "static/js/2.d10a9821.chunk.js",
-    "static/css/main.24ceb35a.chunk.css",
+    "static/css/main.9fffb429.chunk.css",
     "static/js/main.a376cd7c.chunk.js"
   ]
 }
