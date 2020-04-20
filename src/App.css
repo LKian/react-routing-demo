@@ -18,7 +18,8 @@ nav {
 }
 
 .page {
-  max-width: 80%;
+  /* max-width: 80%; */
+  max-width: 1000px;
   margin: 0 auto;
 }
 
@@ -42,41 +43,51 @@ nav {
 .grid {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   padding: 0;
-  margin: 0 auto;
 }
 
-@media (min-width: 551px) {
-  .grid {
-    justify-content: space-between;
-  }
-}
-
-/* .grid::after {
+.grid::after {
   content: "";
   width: 100%;
   margin: 0.5rem;
-} */
+  margin-bottom: 1rem;
+}
 
 .card {
   border: 1px solid #ccc;
-  box-shadow: 1px 1px 3px #ccc;
+  box-shadow: 2px 4px 2px #ccc;
   width: 100%;
   min-height: 250px;
-  margin-bottom: 1rem;
+  margin: 1rem;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.card:hover {
+  box-shadow: 4px 8px 4px #ccc;
+  padding: 0;
 }
 
 @media (min-width: 551px) {
   .card {
-    width: calc(50% - 0.5rem);
+    width: calc(45% - 0.5rem);
+  }
+}
+@media (min-width: 551px) {
+  .grid::after {
+    width: calc(45% - 0.5rem);
   }
 }
 
 @media (min-width: 801px) {
   .card {
-    width: calc(33.33% - 0.5rem);
-    max-width: 400px;
+    width: calc(30% - 0.5rem);
+  }
+}
+
+@media (min-width: 801px) {
+  .grid::after {
+    width: calc(30% - 0.5rem);
   }
 }
 
@@ -97,5 +108,37 @@ nav {
 
 .card-body {
   padding: 15px;
+  text-align: left;
+}
+
+.page {
+  margin: 0 20px;
+}
+
+@media (min-width: 551px) {
+  .article {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.article {
+  margin: 20px 0;
+  flex-direction: row;
+}
+
+.article-thumbnail img {
+  max-width: 300px;
+}
+
+@media (min-width: 551px) {
+  .article-thumbnail img {
+    width: 125px;
+    margin-top: 7.5px;
+  }
+}
+
+.article-text {
+  padding-left: 20px;
   text-align: left;
 }

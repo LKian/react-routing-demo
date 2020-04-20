@@ -3,7 +3,9 @@ import "./App.css";
 import Nav from "./components/Nav";
 import Home from "./components/Home";
 import About from "./components/About";
-import Shop from "./components/Shop";
+import Gallery from "./components/Gallery";
+import Photo from "./components/Photo";
+import News from "./components/News";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
@@ -16,9 +18,9 @@ function App() {
             <Switch>
               <Route exact path="/" component={Home} />
               <Route path="/about" component={About} />
-              <Route path="/shop" component={Shop} />
-              <Route path="/link3" component={About} />
-              <Route path="/##" component={Shop} />
+              <Route exact path="/gallery" component={Gallery} />
+              <Route path="/gallery/:id" component={Photo} />
+              <Route path="/news" component={News} />
             </Switch>
           </div>
         </div>
